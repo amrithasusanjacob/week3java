@@ -34,8 +34,9 @@ public class SoftwareSales {
        subtot=num*99;
        finalamount=subtot-(subtot*dis);
        System.out.println("Subtotal : $"+subtot);
-       System.out.println("Discount : "+(dis*100));
-       System.out.println("Final Amount : $"+finalamount);
+       System.out.println("Discount : "+(dis*100)+"%");
+       System.out.printf("Final Amount : $%.2f",finalamount);
+       obj.close();
 	}
 
 }
